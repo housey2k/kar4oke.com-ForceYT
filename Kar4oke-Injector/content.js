@@ -68,7 +68,7 @@ function setupDragAndDrop() {
 }
 
 function init() {
-  const iframe = document.querySelector("#youtube-0");
+  const iframe = document.querySelector('iframe[id^="youtube-"]');
   const srcdoc = iframe?.getAttribute("srcdoc");
   if (typeof srcdoc === "string") {
     // tenta extrair vídeo carregado do srcdoc (pode ser difícil)
